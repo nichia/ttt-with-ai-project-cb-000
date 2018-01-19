@@ -3,10 +3,10 @@ module Players
     # Makes valid moves
     def move(board)
       puts "Player #{self.token} turn"
-      sleep(1)
-      input = valid_random_number(board)
-      puts "> #{input}"
-      input
+      sleep(2)
+      num = valid_random_number(board)
+      puts "> #{num}"
+      num
     end
 
     def valid_random_number(board)
