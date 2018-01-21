@@ -2,12 +2,12 @@ class GameInterface
 
   def start
     input = ' '
-    while input != 'exit'
+    while input != 'quite'
       puts "Welcome to Tic Tac Toe!"
       puts "Enter \'0\' to watch computer X plays against computer O"
       puts "Enter \'1\' for a one player game, to play against the computer"
       puts "Enter \'2\' for a two player game, to play with a friend"
-      puts "Enter \'exit\' or \'e\' to quite"
+      puts "Enter \'quite\' or \'q\' to quite"
       input = STDIN.gets.chomp.downcase
       case input
       when '0'
@@ -16,8 +16,8 @@ class GameInterface
         one_player
       when '2'
         two_player
-      when 'exit','e'
-        input = 'exit'
+      when 'quite','q'
+        input = 'quite'
       end
     end
   end
