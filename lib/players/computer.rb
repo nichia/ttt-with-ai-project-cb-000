@@ -22,11 +22,11 @@ module Players
   class Computer < Player
 
     def move(board)
-      puts "Player #{self.token} turn"
+      #puts "Player #{self.token} turn"
       #num = valid_random_number(board)
       num = ai_board(board)
-      puts "> #{num}"
-      sleep(2)
+      #puts "> #{num}"
+      sleep(0)
       num
     end
 

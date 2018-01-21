@@ -122,4 +122,24 @@ class Game
       puts "Cat\'s Game!"
     end
   end
+
+  # Makes valid war games moves
+  def turn_war_games
+    result = nil
+    while result == nil
+      # puts "Player #{current_player.token} turn"
+      result = current_player.move(@board.cells)
+      if @board.valid_move?(result)
+        @board.update(result, current_player)
+      else
+        result = nil
+      end
+    end
+  end
+
+  def play_war_games
+    while !over?
+      turn_war_games
+    end
+  end
 end
