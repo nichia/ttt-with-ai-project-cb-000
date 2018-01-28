@@ -84,8 +84,7 @@ class GameInterface
 #<<<<<<< HEAD
 #=======
 
-      games_played += 1
-      puts "Playing Wargames #{games_played}"
+      #puts "Playing Wargames #{games_played + 1}"
 
 #>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
       new_game = Game.new(player_1, player_2)
@@ -98,7 +97,7 @@ class GameInterface
         o_wins += 1
       end
 #<<<<<<< HEAD
-      #games_played += 1
+      games_played += 1
       puts "Wargames #{games_played} X-wins:#{x_wins} O-wins:#{o_wins} Draws:#{draws}"
 #=======
 #>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
