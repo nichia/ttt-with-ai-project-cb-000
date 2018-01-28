@@ -98,7 +98,7 @@ class GameInterface
         o_wins += 1
       end
 #<<<<<<< HEAD
-      games_played += 1
+      #games_played += 1
       puts "Wargames #{games_played} X-wins:#{x_wins} O-wins:#{o_wins} Draws:#{draws}"
 #=======
 #>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
