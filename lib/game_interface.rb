@@ -81,8 +81,8 @@ class GameInterface
 
     games_played = 0
     while games_played < 100 do
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 
       games_played += 1
       puts "Playing Wargames #{games_played}"
