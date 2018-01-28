@@ -8,7 +8,7 @@ class GameInterface
       puts "Enter \'1\' for a one player game, to play against the computer"
       puts "Enter \'2\' for a two player game, to play with a friend"
       puts "Enter \'9\' for wargames"
-      puts "Enter \'quite\' or \'q\' to quite"
+      puts "Enter \'quit\' or \'q\' to quit"
       input = STDIN.gets.chomp.downcase
       case input
       when '0'
@@ -19,8 +19,8 @@ class GameInterface
         two_player
       when '9'
         wargames
-      when 'quite','q'
-        input = 'quite'
+      when 'quit','q'
+        input = 'quit'
       end
     end
   end
