@@ -26,7 +26,11 @@ module Players
       #num = valid_random_number(board)
       num = ai_board(board)
       #puts "> #{num}"
-      sleep(0)
+#<<<<<<< HEAD
+#      sleep(0)
+#=======
+      sleep(0.5)
+#>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
       num
     end
 
@@ -103,7 +107,8 @@ module Players
         win_combo = WIN_COMBINATIONS.detect do |combination|
           board[combination[0]] == token &&
           board[combination[0]] == board[combination[2]] &&
-          board[combination[1]] == " "          #puts ">>win_combo #{board[combination[0]]} #{board[combination[1]]} #{board[combination[2]]}"
+          board[combination[1]] == " "
+          #puts ">>win_combo #{board[combination[0]]} #{board[combination[1]]} #{board[combination[2]]}"
         end
       end
       if win_combo == nil

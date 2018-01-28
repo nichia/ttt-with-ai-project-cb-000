@@ -2,13 +2,13 @@ class GameInterface
 
   def start
     input = ' '
-    while input != 'quite'
+    while input != 'quit'
       puts "Welcome to Tic Tac Toe!"
       puts "Enter \'0\' to watch computer X plays against computer O"
       puts "Enter \'1\' for a one player game, to play against the computer"
       puts "Enter \'2\' for a two player game, to play with a friend"
       puts "Enter \'9\' for wargames"
-      puts "Enter \'quite\' or \'q\' to quite"
+      puts "Enter \'quit\' or \'q\' to quit"
       input = STDIN.gets.chomp.downcase
       case input
       when '0'
@@ -19,8 +19,8 @@ class GameInterface
         two_player
       when '9'
         wargames
-      when 'quite','q'
-        input = 'quite'
+      when 'quit','q'
+        input = 'quit'
       end
     end
   end
@@ -81,6 +81,12 @@ class GameInterface
 
     games_played = 0
     while games_played < 100 do
+#<<<<<<< HEAD
+#=======
+
+      #puts "Playing Wargames #{games_played + 1}"
+
+#>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
       new_game = Game.new(player_1, player_2)
       new_game.play_war_games
       if new_game.draw?
@@ -90,8 +96,11 @@ class GameInterface
       else
         o_wins += 1
       end
+#<<<<<<< HEAD
       games_played += 1
       puts "Wargames #{games_played} X-wins:#{x_wins} O-wins:#{o_wins} Draws:#{draws}"
+#=======
+#>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
     end
 
     puts "Wargames Final Tally (100 times):"
