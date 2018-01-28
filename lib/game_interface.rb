@@ -80,7 +80,7 @@ class GameInterface
     player_2 = Players::Computer.new('O')
 
     games_played = 0
-    while games_played < 100 do
+    while games_played < 50 do
 #<<<<<<< HEAD
 #=======
 
