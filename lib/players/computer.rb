@@ -107,7 +107,7 @@ module Players
         win_combo = WIN_COMBINATIONS.detect do |combination|
           board[combination[0]] == token &&
           board[combination[0]] == board[combination[2]] &&
-          board[combination[1]] == " "          
+          board[combination[1]] == " "
           #puts ">>win_combo #{board[combination[0]]} #{board[combination[1]]} #{board[combination[2]]}"
         end
       end
