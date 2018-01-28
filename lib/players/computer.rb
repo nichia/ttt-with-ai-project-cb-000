@@ -27,7 +27,7 @@ module Players
       num = ai_board(board)
       #puts "> #{num}"
 #<<<<<<< HEAD
-      sleep(0)
+#      sleep(0)
 #=======
       sleep(0.5)
 #>>>>>>> aa60641dfc48eb30d4bf9649158a23db2bb261f4
