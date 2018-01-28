@@ -2,7 +2,7 @@ class GameInterface
 
   def start
     input = ' '
-    while input != 'quite'
+    while input != 'quit'
       puts "Welcome to Tic Tac Toe!"
       puts "Enter \'0\' to watch computer X plays against computer O"
       puts "Enter \'1\' for a one player game, to play against the computer"
